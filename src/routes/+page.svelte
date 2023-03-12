@@ -9,7 +9,9 @@
 		Barrier.studio
 	</h1>
 
-	<form name="contact" netlify>
+	<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+		<input type="hidden" name="form-name" value="contact" />
+
 		<div class="flex gap-x-2">
 			<input
 				class="border-t-black border-l-black border-2 border-b-gray-400 border-r-gray-400"
